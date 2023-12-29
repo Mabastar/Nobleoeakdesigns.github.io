@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NobleOak Designs</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ==== Google Fonts ==== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;800&display=swap" rel="stylesheet">
+
+  <!-- ==== Font Awesome ==== -->
+
+  <script src="https://kit.fontawesome.com/84514dfe59.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+  <!-- ==== Header / Navbar ==== -->
+
+  <header>
+    <nav class="nav">
+      <h1>NobleOak Designs</h1>
+      <ul id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <button class="btn">Work with Us</button>
+      </ul>
+      <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+  </header>
+  <div class="dropdown_menu">
+    <ul>
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <button class="btn">Work with Us</button>
+    </ul>
+   </div>
+
+    <!-- ==== Home ==== -->
+  <section class="home" id="home">
+    <h1>“Let’s shape Essence, let’s create Elegance”</h1>
+    <p>At <span>NobleOak Designs</span>, every feature of our creations reveals the very essence of wood. From timeless design to handcrafted finishing, we transform each piece of wood into a piece of elegance, capturing the natural beauty and authenticity of the material. Explore our collection to discover unique creations, crafted with passion and devotion to wood.</p>
+    <button class="btn-home"><a href="#contact">Contact Us</a></button>
+  </section>
+   <!-- ==== About ==== -->
+  <section class="about" id="about">
+      <div class="text">
+        <h1>About Us</h1>
+        <p>At <span>NobleOak Designs</span>, our passion is to bring the natural beauty of wood to life. As a company dedicated to the wood trade for over two decades, we are committed to creating unique pieces that embody elegance, durability and refinement.</p>
+      </div>
+    <div class="card-img">
+      <img src="img/pexels-max-rahubovskiy-6489116.jpg">
+    </div>
+  </section>
+  <section class="services">
+    <div class="text">
+      <h1>Commitment to Sustainability</h1>
+      <p>We are aware of our responsibility towards nature. By using responsible working practices and sustainable wood sources, we strive to minimize our ecological footprint while preserving the natural beauty of wood for future generations.</p>
+    </div>
+  <div class="card-img-services">
+    <img src="img/pexels-max-rahubovskiy-7061401.jpg">
+  </div>
+</section>
+
+ <!-- ==== Services ==== -->
+
+<section class="client" id="services">
+  <h2 class="heading">Our Services</h2>
+  <p class="text">Specialized in the custom creation of furniture and wooden objects. Our services include custom furniture design tailored to your needs and style, using high-quality woods carefully selected for their beauty and durability. We also carry out antique furniture restoration projects, bringing precious pieces back to life while preserving their unique character. Our team of qualified artisans combines traditional know-how and modern techniques to offer unique creations, combining aesthetics, functionality and incomparable artisanal quality.</p>
+  <div class="imgBx">
+    <img src="img/pexels-andrea-davis-3653849.jpg">
+    <img src="img/pexels-cup-of-couple-6963787.jpg">
+    <img src="img/pexels-element-digital-1125136.jpg">
+    <img src="img/pexels-thirdman-7181188.jpg">
+  </div>
+</section>
+
+<!-- ==== contact ==== -->
+
+<div class="contact-box" id="contact">
+  <h1>Contact</h1>
+<form
+  action="https://formspree.io/f/xwkgedoo"
+  method="POST" 
+  <label>
+    <h3>Your Name</h3>
+    <input type="text" class="input-field" name="name" placeholder="Name" required>
+  </label>
+  <label>
+    <h3>Your Email</h3>
+    <input type="email" class="input-field" name="email" placeholder="Email" required>
+  </label>
+  <label>
+    <h3>Your Message</h3>
+    <textarea class="input-field textarea-field" name="message" placeholder="Message" required></textarea>
+  </label>
+  <button type="submit" class="btn-form" >Send</button>
+</form>
+</div>
+
+ <!-- ==== Footer ==== -->
+
+<section class="footer">
+  <p class="text">&copy; 2024 Mabastar All Right Reserved</p>
+  <ul>
+    <p class="text">Follow us on :</p>
+    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+  </ul>
+</section>
+</body>
+
+<!-- ==== Js Toggle Icon ==== -->
+<script>
+  const toggleBtn = document.querySelector('.toggle_btn')
+  const toggleBtnIcon = document.querySelector('.toggle_btn i')
+  const dropDownMenu = document.querySelector('.dropdown_menu')
+ 
+  toggleBtn.onclick = function () {
+   dropDownMenu.classList.toggle('open')
+   const isOpen = dropDownMenu.classList.contains('open')
+ 
+   toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+  }
+ </script>
+
+</html>
